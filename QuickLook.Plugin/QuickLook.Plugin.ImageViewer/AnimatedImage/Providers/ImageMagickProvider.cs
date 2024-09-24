@@ -85,7 +85,7 @@ namespace QuickLook.Plugin.ImageViewer.AnimatedImage.Providers
                     Defines = new DngReadDefines
                     {
                         OutputColor = DngOutputColor.SRGB,
-                        UseCameraWhitebalance = true,
+                        UseCameraWhiteBalance = true,
                         DisableAutoBrightness = false
                     }
                 };
@@ -118,7 +118,7 @@ namespace QuickLook.Plugin.ImageViewer.AnimatedImage.Providers
                         mi.AutoOrient();
 
                         if (mi.Width != (int) fullSize.Width || mi.Height != (int) fullSize.Height)
-                            mi.Resize((int) fullSize.Width, (int) fullSize.Height);
+                            mi.Resize((int)fullSize.Width, (int)fullSize.Height);
 
                         mi.Density = new Density(DisplayDeviceHelper.DefaultDpi * DisplayDeviceHelper.GetCurrentScaleFactor().Horizontal,
                             DisplayDeviceHelper.DefaultDpi * DisplayDeviceHelper.GetCurrentScaleFactor().Vertical);
